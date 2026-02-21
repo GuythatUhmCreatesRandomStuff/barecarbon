@@ -1,18 +1,12 @@
-// Add a variable for ore displacement
-#define OREDISPLACEMENT 30
+// Flat world generation code goes here
 
-// Existing code...
+#include <stdio.h>
 
-void generateOres() {
-    // Use OREDISPLACEMENT in ore generation checks
-    if (condition_to_check_for_ore) {
-        int orePosition = basePosition + OREDISPLACEMENT;
-        // Further logic...
-    }
-    
-    // Other checks where 30 was previously hardcoded
-    if (otherCondition) {
-        int anotherPosition = basePosition + OREDISPLACEMENT;
-        // Further logic...
-    }
+void generateFlatWorld() {
+    // Implementation of flat world generation
+}
+
+int main() {
+    generateFlatWorld();
+    return 0;
 }
