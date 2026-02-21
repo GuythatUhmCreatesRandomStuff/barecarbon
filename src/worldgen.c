@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 void generateFlatWorld() {
-    // Implementation of flat world generation
+    // TODO:Proper implementation of flat world generation, reducing memory, probally
 }
 
 int main() {
