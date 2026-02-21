@@ -11,19 +11,21 @@ void generateFlatWorld() {
             }
             // Place stone at y=40
             setBlock(x, 40, z, STONE);
-            // Place ores at specified heights
-            if (y == 27) {
-                setBlock(x, 27, z, COAL_ORE);
-            } else if (y == 13) {
-                setBlock(x, 13, z, IRON_ORE);
-            } else if (y == 7) {
-                setBlock(x, 7, z, GOLD_ORE);
-            } else if (y == 3) {
-                setBlock(x, 3, z, DIAMOND_ORE);
-            } else if (y == 1) {
-                setBlock(x, 1, z, LAVA);
-            } else if (y == 0) {
-                setBlock(x, 0, z, BEDROCK);
+            // Place ores at multiples of 30 in x and z
+            if (x % 30 == 0 && z % 30 == 0) {
+                if (y == 27) {
+                    setBlock(x, 27, z, COAL_ORE);
+                } else if (y == 13) {
+                    setBlock(x, 13, z, IRON_ORE);
+                } else if (y == 7) {
+                    setBlock(x, 7, z, GOLD_ORE);
+                } else if (y == 3) {
+                    setBlock(x, 3, z, DIAMOND_ORE);
+                } else if (y == 1) {
+                    setBlock(x, 1, z, LAVA);
+                } else if (y == 0) {
+                    setBlock(x, 0, z, BEDROCK);
+                }
             }
         }
     }
